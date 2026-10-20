@@ -8,9 +8,9 @@ window.TEMPLE_TRIP = {
   timeZone: "Mountain Time",
   startISO: "2026-10-24T20:00:00-06:00",
   reservationUrl: "https://tos.churchofjesuschrist.org/",
-  // Paste the public Notion FORM link here, never the private database link or a token.
-  // When empty, appointment confirmations continue to use the existing SMS flow.
-  confirmationFormUrl: "https://rattle-odometer-c27.notion.site/3ffa33226adf80d28748c2e56601a05b",
+  // Public URL of the private server-side confirmation bridge. Never put a Notion token here.
+  // An empty value shows the in-page dialog, but does not claim to save or open SMS.
+  confirmationEndpoint: "https://temple-trip-confirmations.vercel.app/api/confirm",
   contactName: "Ricardo",
   contactPhone: "+13855980800",
   contactDisplay: "(385) 598-0800",

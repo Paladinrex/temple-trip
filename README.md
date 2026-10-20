@@ -6,10 +6,10 @@ Live invitation: https://paladinrex.github.io/temple-trip/
 
 ## Edit the invitation
 
-- `config.js`: event details, reservation link, contact number, and optional public Notion Form URL.
+- `config.js`: event details, official reservation link, SMS contact and public confirmation endpoint.
 - `index.html`: invitation copy and page structure.
 - `styles.css`: colors, typography, borders, responsive layouts, and envelope animation.
-- `app.js`: envelope interactions and SMS drafts.
+- `app.js`: envelope interactions, in-page confirmation and SMS drafts.
 - `assets/`: the two displayed photos and editable SVG decorations.
 
 No installation or build step is required. Open `index.html` locally or serve this directory with a static server.
@@ -22,6 +22,14 @@ In Settings → Pages, choose **Deploy from a branch**, then **main** and **/ (r
 
 Appointments are booked on the official Church reservation website. Availability is not tracked by this invitation. Help and ride buttons open message drafts for Ricardo; each guest reviews and sends the message in their own messaging app. Nothing sends automatically.
 
-The “I’ve already reserved” button opens a public Notion Form that saves responses in the organizer’s private list. Help and ride coordination remain SMS drafts. To change the form, update `confirmationFormUrl` in `config.js` with a public **form** URL. Keep the underlying guest database private. Do not place API tokens or private database links in these public files.
+“I’ve already reserved” opens a dialog inside the invitation. Guests choose Baptisms, Initiatories, Endowment or Sealing, enter their booked appointment time, and review their message. Only pressing “Save my confirmation” sends these details to Ricardo’s private trip list through the server-side bridge. It does not open Notion Forms or send a text message. Success appears only after the server confirms creation of a Notion page. Ambiguous failures are not retried automatically; check with Ricardo before resubmitting.
 
-Ride requests and ride offers continue to use SMS. Neither opening a draft nor opening a form means that a ride has been arranged or a response has been submitted.
+The public HTTPS endpoint in `config.js` is not a secret. The Notion token and private destination remain exclusively in Vercel’s protected production settings. Never add credentials, environment files or private response exports to this repository. Keep the underlying Notion database private.
+
+Ride requests and ride offers continue to use SMS. Neither opening a draft nor opening a dialog means that a ride has been arranged or a confirmation has been saved.
+
+## Verification
+
+The server was deployed and its preflight, invalid-input and origin checks were verified without creating records. Eight local backend tests passed using a simulated Notion provider. At the organizer’s request, no real or fictitious Notion confirmation was submitted, so the complete successful write flow remains unverified until the first legitimate confirmation.
+
+The small public endpoint has strict input limits, automatic platform DDoS mitigation and basic per-instance request limits. These are not a guarantee against spam or duplicate submissions. Review stronger distributed controls before expanding the site beyond this event.

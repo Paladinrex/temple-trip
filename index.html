@@ -91,7 +91,7 @@
 
       <section id="the-evening" class="evening-section page-width" aria-labelledby="evening-title">
         <div class="section-intro"><p class="eyebrow">COME WITH A WILLING HEART</p><h2 id="evening-title">A place for you.<br><em>A moment for eternity.</em></h2></div>
-        <div class="ordinance-copy"><p>Join us for <strong>baptisms or initiatories</strong>, according to available appointments. Our planned time is <strong>8:00 PM</strong>; please check the times available for your ordinance.</p><a class="text-link" data-action="confirm" href="sms:+13855980800?body=Hi%20Ricardo%2C%20my%20name%20is%20____.%20I%20have%20reserved%20my%20temple%20appointment%20for%20October%2024%2C%202026.">I’ve already reserved <span aria-hidden="true">↗</span></a><p class="small-note" data-confirmation-note>This lets Ricardo know. Book your temple appointment on the official reservation site first.</p></div>
+        <div class="ordinance-copy"><p>Join us for <strong>baptisms, initiatories, an endowment session, or sealings</strong>, according to available appointments. Our planned time is <strong>8:00 PM</strong>; please check the times available for your ordinance.</p><button type="button" class="text-link" data-action="confirm" aria-haspopup="dialog">I’ve already reserved <span aria-hidden="true">↗</span></button><p class="small-note" data-confirmation-note>Let Ricardo know here after booking on the official reservation site.</p></div>
       </section>
 
       <section id="ride-together" class="coordination-section" aria-labelledby="coordination-title">
@@ -121,10 +121,15 @@
         <label>Number of people needing a ride<input id="people" name="people" type="number" inputmode="numeric" min="1" max="99" value="1"></label>
       </div>
       <div id="offer-fields" class="conditional-fields" hidden><label>Available passenger seats<input id="seats" name="seats" type="number" inputmode="numeric" min="1" max="99" value="1"></label></div>
+      <div id="confirmation-fields" class="conditional-fields" hidden>
+        <label>Ordinance<select id="ordinance" name="ordinance" disabled><option value="">Choose an ordinance</option><option value="Baptisms">Baptisms</option><option value="Initiatories">Initiatories</option><option value="Endowment">Endowment</option><option value="Sealing">Sealing</option></select></label>
+        <label>Your reserved appointment time<input id="appointment-time" name="appointmentTime" type="time" disabled></label>
+      </div>
       <label id="extra-label"><span id="extra-label-text">Anything else? (optional)</span><textarea id="extra" name="extra" rows="2" maxlength="800" placeholder="Add a question or a little more detail"></textarea></label>
       <details class="message-preview" open><summary>Your message to <span data-text="contactName">Ricardo</span></summary><p id="message-preview-text"></p></details>
-      <button class="button button-primary message-submit" type="submit">Continue to Messages <svg aria-hidden="true"><use href="#arrow-icon"></use></svg></button>
-      <p class="small-note sms-note">Your messaging app will open with this draft. You choose when to send it. Nothing is submitted or stored on this website.</p>
+      <button class="button button-primary message-submit" type="submit"><span id="message-submit-label">Continue to Messages</span><svg aria-hidden="true"><use href="#arrow-icon"></use></svg></button>
+      <p class="small-note sms-note" id="submission-note">Your messaging app will open with this draft. You choose when to send it. Nothing is submitted or stored on this website.</p>
+      <p id="confirmation-status" class="confirmation-status" role="status" aria-live="polite" hidden></p>
     </form>
     <div class="sms-fallback" id="sms-fallback" hidden><p>If your messaging app didn’t open, copy the message and text <span data-text="contactDisplay">(385) 598-0800</span>.</p><button class="text-link" id="copy-message" type="button">Copy message</button><p id="copy-status" role="status"></p></div>
   </dialog>
