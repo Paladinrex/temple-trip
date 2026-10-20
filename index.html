@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f36">
+  <meta name="description" content="You're invited to a Temple Trip at the Provo City Center Temple. Saturday, October 24, 2026 at 8:00 PM. Reserve your appointment and join us for an evening of service, peace, and friendship.">
+  <meta property="og:title" content="You're invited · Temple Trip">
+  <meta property="og:description" content="Provo City Center Temple · October 24, 2026 · 8:00 PM. An evening of service, peace, and friendship.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://paladinrex.github.io/temple-trip/assets/temple-evening.jpg">
+  <meta property="og:url" content="https://paladinrex.github.io/temple-trip/">
+  <link rel="canonical" href="https://paladinrex.github.io/temple-trip/">
+  <title>Temple Trip · October 24, 2026</title>
+  <link rel="icon" type="image/svg+xml" href="assets/temple-mark.svg">
+  <link rel="preload" as="image" href="assets/temple-evening.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to invitation</a>
+
+  <section class="invitation-cover" id="cover" role="dialog" aria-modal="true" aria-labelledby="cover-title">
+    <div class="cover-ornament ornament-left" aria-hidden="true"></div>
+    <div class="cover-ornament ornament-right" aria-hidden="true"></div>
+    <button class="cover-skip" id="skip-cover" type="button">View invitation <span aria-hidden="true">↗</span></button>
+    <div class="cover-content">
+      <p class="eyebrow cover-eyebrow">A MOMENT SET APART</p>
+      <h2 id="cover-title">You’re invited.</h2>
+      <p class="cover-subtitle">An evening at the house of the Lord.</p>
+      <button class="envelope-button" id="open-envelope" type="button" aria-label="Open your Temple Trip invitation">
+        <span class="envelope" aria-hidden="true">
+          <span class="envelope-back"></span>
+          <span class="envelope-letter"><span class="letter-kicker">PLEASE JOIN US FOR A</span><span class="letter-title">Temple Trip</span><span class="letter-rule"></span><span class="letter-place" data-text="temple">Provo City Center Temple</span></span>
+          <span class="envelope-front"></span>
+          <span class="envelope-flap"></span>
+          <span class="wax-seal"><svg viewBox="0 0 160 150" aria-hidden="true"><use href="#temple-symbol"></use></svg></span>
+        </span>
+        <span class="open-label">OPEN YOUR INVITATION <span aria-hidden="true">↗</span></span>
+      </button>
+      <p class="cover-date"><span data-text="shortDate">October 24, 2026</span><span class="tiny-diamond" aria-hidden="true"></span><span data-text="timeLabel">8:00 PM</span></p>
+    </div>
+    <p class="cover-footer" data-text="temple">PROVO CITY CENTER TEMPLE</p>
+  </section>
+
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="temple-symbol" viewBox="0 0 160 150" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 130h126M24 126V83h21v43M115 126V83h21v43M45 126V86l35-26 35 26v40M29 82l5-30 6 30M120 82l6-30 6 30M31 50h7M123 50h7M69 67V42h22v25M66 42l14-30 14 30M80 12V4m0 3 7-2M58 126V90l22-17 22 17v36M74 126v-17a6 6 0 0 1 12 0v17"/>
+      <path d="M75 59V49a5 5 0 0 1 10 0v10M29 104V92a5 5 0 0 1 10 0v12zm92 0V92a5 5 0 0 1 10 0v12zM61 104V94m38 10V94M76 94V84m8 10V84M24 113h21m70 0h21M45 116h13m44 0h13M25 136h110"/>
+    </symbol>
+    <symbol id="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="car-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="m6 13 3-7h14l3 7m-20 0h20l2 4v7H4v-7l2-4ZM8 24v3m16-3v3M5 19h5m12 0h5M3 12h4m18 0h4"/></symbol>
+  </svg>
+
+  <div id="site-content">
+    <div class="page-border" aria-hidden="true"></div>
+    <div class="edge-ornament edge-left" aria-hidden="true"></div>
+    <div class="edge-ornament edge-right" aria-hidden="true"></div>
+    <header class="site-header page-width">
+      <a class="wordmark" href="#main" aria-label="Temple Trip home"><svg class="brand-mark" aria-hidden="true"><use href="#temple-symbol"></use></svg><span>TEMPLE TRIP<span class="wordmark-subtitle">AN EVENING TOGETHER</span></span></a>
+      <nav aria-label="Main navigation"><a href="#the-evening">The evening</a><a href="#ride-together">Rides & help</a><a class="nav-reserve" data-reservation href="https://tos.churchofjesuschrist.org/" target="_blank" rel="noopener noreferrer">Reserve your place <span aria-hidden="true">↗</span></a></nav>
+    </header>
+
+    <main id="main">
+      <section class="hero page-width" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="small-rule" aria-hidden="true"></span> YOU’RE WARMLY INVITED</p>
+          <h1 id="hero-title" tabindex="-1">An evening<br>in a <em>holy place.</em></h1>
+          <p class="hero-temple" data-text="temple">Provo City Center Temple</p>
+          <p class="hero-description">Let’s make time for the things that matter.<br class="desktop-break"> Join us for an evening of service, peace,<br class="desktop-break"> and friendship.</p>
+          <div class="event-details">
+            <div><span class="detail-label">SATURDAY</span><time data-event-date datetime="2026-10-24T20:00:00-06:00">October 24, 2026</time></div>
+            <span class="detail-divider" aria-hidden="true"></span>
+            <div><span class="detail-label">AT THE TEMPLE</span><span class="event-time" data-text="timeLabel">8:00 PM</span></div>
+          </div>
+          <a class="button button-primary" data-reservation href="https://tos.churchofjesuschrist.org/" target="_blank" rel="noopener noreferrer">Reserve an appointment <svg aria-hidden="true"><use href="#arrow-icon"></use></svg></a>
+          <p class="availability"><span aria-hidden="true"></span><span data-text="availabilityNote">Appointments are limited. Please reserve as soon as you can.</span></p>
+        </div>
+        <div class="hero-art">
+          <span class="art-annotation">A LITTLE CLOSER TO HEAVEN</span>
+          <div class="hero-arch"><img data-photo="hero" src="assets/temple-evening.jpg" alt="The illuminated Provo City Center Temple at dusk, with mountains behind it" width="1600" height="1280" fetchpriority="high"></div>
+          <figure class="glass-inset"><img data-photo="window" src="assets/stained-glass.jpg" alt="An arched stained-glass window with soft green, blue, and golden details" width="1066" height="1600"><figcaption>LIGHT. PEACE. BELONGING.</figcaption></figure>
+          <span class="arch-star" aria-hidden="true">✧</span>
+          <p class="photo-caption">The house of the Lord <span>PROVO, UTAH</span></p>
+        </div>
+      </section>
+
+      <div class="invitation-divider page-width" aria-hidden="true"><span></span><svg><use href="#temple-symbol"></use></svg><span></span></div>
+
+      <section id="the-evening" class="evening-section page-width" aria-labelledby="evening-title">
+        <div class="section-intro"><p class="eyebrow">COME WITH A WILLING HEART</p><h2 id="evening-title">A place for you.<br><em>A moment for eternity.</em></h2></div>
+        <div class="ordinance-copy"><p>Join us for <strong>baptisms or initiatories</strong>, according to available appointments. Our planned time is <strong>8:00 PM</strong>; please check the times available for your ordinance.</p><a class="text-link" data-action="confirm" href="sms:+13855980800?body=Hi%20Ricardo%2C%20my%20name%20is%20____.%20I%20have%20reserved%20my%20temple%20appointment%20for%20October%2024%2C%202026.">I’ve already reserved <span aria-hidden="true">↗</span></a><p class="small-note" data-confirmation-note>This lets Ricardo know. Book your temple appointment on the official reservation site first.</p></div>
+      </section>
+
+      <section id="ride-together" class="coordination-section" aria-labelledby="coordination-title">
+        <div class="page-width coordination-inner">
+          <div class="coordination-heading"><p class="eyebrow">LET’S GO TOGETHER</p><h2 id="coordination-title">Good company.<br><em>A helping hand.</em></h2><p>A ride, a reservation question, or a little help finding or printing family names — reach out. We’re happy to help.</p><p class="contact-line">TEXT <span data-text="contactName">RICARDO</span> <span class="tiny-diamond" aria-hidden="true"></span> <span data-text="contactDisplay">(385) 598-0800</span></p></div>
+          <div class="action-list">
+            <a data-action="help" href="sms:+13855980800?body=Hi%20Ricardo%2C%20my%20name%20is%20____.%20I%20need%20help%20reserving%20for%20the%20Temple%20Trip%20on%20October%2024%20at%208%20PM."><span class="action-number">01</span><span><strong>Need help with an appointment?</strong><small>Questions, reservations, or family names</small></span><span class="action-arrow" aria-hidden="true">↗</span></a>
+            <a data-action="request" href="sms:+13855980800?body=Hi%20Ricardo%2C%20my%20name%20is%20____.%20Cinnamon%20Tree%20apartment%3A%20____.%20I%20need%20a%20ride%20for%20____%20people%20for%20the%20Temple%20Trip%20on%20October%2024%20at%208%20PM."><svg class="action-car" aria-hidden="true"><use href="#car-icon"></use></svg><span><strong>I need a ride</strong><small>Let’s help you get there</small></span><span class="action-arrow" aria-hidden="true">↗</span></a>
+            <a data-action="offer" href="sms:+13855980800?body=Hi%20Ricardo%2C%20my%20name%20is%20____.%20I%20can%20offer%20a%20ride%20with%20____%20available%20passenger%20seats%20for%20the%20Temple%20Trip%20on%20October%2024%20at%208%20PM."><svg class="action-car" aria-hidden="true"><use href="#car-icon"></use></svg><span><strong>I can offer a ride</strong><small>Have an extra seat? Make someone’s evening.</small></span><span class="action-arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="site-footer page-width"><p><span data-text="title">Temple Trip</span> <span aria-hidden="true">·</span> <span data-text="shortDate">October 24, 2026</span></p><button id="replay-envelope" type="button">Open the invitation again <span aria-hidden="true">↗</span></button><p class="footer-note">A community invitation. Reservations are managed by the Church’s official site.</p></footer>
+  </div>
+
+  <dialog id="message-dialog" aria-labelledby="message-title">
+    <button class="dialog-close" id="close-dialog" type="button" aria-label="Close message form">×</button>
+    <p class="eyebrow">LET’S MAKE IT EASY</p>
+    <h2 id="message-title">Send a message</h2>
+    <p class="dialog-intro" id="dialog-description">Add your details, then review your message.</p>
+    <form id="message-form">
+      <label>Your name<input id="sender-name" name="name" autocomplete="name" required maxlength="100" placeholder="First and last name"></label>
+      <div id="ride-fields" class="conditional-fields" hidden>
+        <label>Cinnamon Tree apartment number<input id="apartment" name="apartment" autocomplete="off" maxlength="30" placeholder="e.g. 24"></label>
+        <label>Number of people needing a ride<input id="people" name="people" type="number" inputmode="numeric" min="1" max="99" value="1"></label>
+      </div>
+      <div id="offer-fields" class="conditional-fields" hidden><label>Available passenger seats<input id="seats" name="seats" type="number" inputmode="numeric" min="1" max="99" value="1"></label></div>
+      <label id="extra-label"><span id="extra-label-text">Anything else? (optional)</span><textarea id="extra" name="extra" rows="2" maxlength="800" placeholder="Add a question or a little more detail"></textarea></label>
+      <details class="message-preview" open><summary>Your message to <span data-text="contactName">Ricardo</span></summary><p id="message-preview-text"></p></details>
+      <button class="button button-primary message-submit" type="submit">Continue to Messages <svg aria-hidden="true"><use href="#arrow-icon"></use></svg></button>
+      <p class="small-note sms-note">Your messaging app will open with this draft. You choose when to send it. Nothing is submitted or stored on this website.</p>
+    </form>
+    <div class="sms-fallback" id="sms-fallback" hidden><p>If your messaging app didn’t open, copy the message and text <span data-text="contactDisplay">(385) 598-0800</span>.</p><button class="text-link" id="copy-message" type="button">Copy message</button><p id="copy-status" role="status"></p></div>
+  </dialog>
+</body>
+</html>
