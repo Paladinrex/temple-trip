@@ -10,7 +10,7 @@ window.TEMPLE_TRIP = {
   reservationUrl: "https://tos.churchofjesuschrist.org/",
   // Paste the public Notion FORM link here, never the private database link or a token.
   // When empty, appointment confirmations continue to use the existing SMS flow.
-  confirmationFormUrl: "",
+  confirmationFormUrl: "https://rattle-odometer-c27.notion.site/3ffa33226adf80d28748c2e56601a05b",
   contactName: "Ricardo",
   contactPhone: "+13855980800",
   contactDisplay: "(385) 598-0800",

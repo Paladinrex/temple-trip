@@ -2,7 +2,7 @@
 
 An editable, mobile-friendly invitation to the Provo City Center Temple on Saturday, October 24, 2026, at 8:00 PM Mountain Time.
 
-GitHub Pages address, available after Pages is enabled: https://paladinrex.github.io/temple-trip/
+Live invitation: https://paladinrex.github.io/temple-trip/
 
 ## Edit the invitation
 
@@ -20,8 +20,8 @@ In Settings → Pages, choose **Deploy from a branch**, then **main** and **/ (r
 
 ## Reservations and messages
 
-Appointments are booked on the official Church reservation website. Availability is not tracked by this invitation. The four contact actions open drafts for Ricardo; each guest reviews and sends the message in their own messaging app. Nothing sends automatically.
+Appointments are booked on the official Church reservation website. Availability is not tracked by this invitation. Help and ride buttons open message drafts for Ricardo; each guest reviews and sends the message in their own messaging app. Nothing sends automatically.
 
-The appointment confirmation currently uses SMS. To use Notion, set `confirmationFormUrl` in `config.js` to a public **form** URL. Keep the underlying guest database private. Do not place API tokens or private database links in these public files.
+The “I’ve already reserved” button opens a public Notion Form that saves responses in the organizer’s private list. Help and ride coordination remain SMS drafts. To change the form, update `confirmationFormUrl` in `config.js` with a public **form** URL. Keep the underlying guest database private. Do not place API tokens or private database links in these public files.
 
 Ride requests and ride offers continue to use SMS. Neither opening a draft nor opening a form means that a ride has been arranged or a response has been submitted.
